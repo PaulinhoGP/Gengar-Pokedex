@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Gengar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="Gengar" class="header-img">
+            <div class="title-slogan">
+                <h1>Pokédex Gengar</h1>
+                <p class="slogan">Explore os 151 Pokémon originais!</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pokedex">
+            <h2>Pokédex</h2>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar Pokémon..." onkeyup="searchPokemon(this.value)">
+            </div>
+
+            <div class="filters">
+                <button onclick="filterType('all')" class="active">Todos</button>
+                <button onclick="filterType('grass')">Grama</button>
+                <button onclick="filterType('poison')">Veneno</button>
+                <button onclick="filterType('fire')">Fogo</button>
+                <button onclick="filterType('water')">Água</button>
+                <button onclick="filterType('electric')">Elétrico</button>
+                <button onclick="filterType('ghost')">Fantasma</button>
+                <button onclick="filterType('ground')">Terra</button>
+                <button onclick="filterType('normal')">Normal</button>
+                <button onclick="filterType('bug')">Inseto</button>
+                <button onclick="filterType('fairy')">Fada</button>
+            </div>
+
+            <div class="card-container">
+
+                <!-- Pokémon #001 a #030 -->
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=1">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="Bulbasaur GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/1.gif" alt="Bulbasaur Shiny GIF">
+                    </div>
+                </a>
+                <h3>Bulbasaur</h3>
+                <p>#001</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=2">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/2.gif" alt="Ivysaur GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/2.gif" alt="Ivysaur Shiny GIF">
+                    </div>
+                </a>
+                <h3>Ivysaur</h3>
+                <p>#002</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=3">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/3.gif" alt="Venusaur GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/3.gif" alt="Venusaur Shiny GIF">
+                    </div>
+                </a>
+                <h3>Venusaur</h3>
+                <p>#003</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=4">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/4.gif" alt="Charmander GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/4.gif" alt="Charmander Shiny GIF">
+                    </div>
+                </a>
+                <h3>Charmander</h3>
+                <p>#004</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=5">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="Charmeleon">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/5.gif" alt="Charmeleon GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/5.gif" alt="Charmeleon Shiny GIF">
+                    </div>
+                </a>
+                <h3>Charmeleon</h3>
+                <p>#005</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire type-flying" data-types="fire,flying">
+                <a href="pokemon-detail.html?id=6">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="Charizard">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="Charizard GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/6.gif" alt="Charizard Shiny GIF">
+                    </div>
+                </a>
+                <h3>Charizard</h3>
+                <p>#006</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=7">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/7.gif" alt="Squirtle GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/7.gif" alt="Squirtle Shiny GIF">
+                    </div>
+                </a>
+                <h3>Squirtle</h3>
+                <p>#007</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=8">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="Wartortle">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/8.gif" alt="Wartortle GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/8.gif" alt="Wartortle Shiny GIF">
+                    </div>
+                </a>
+                <h3>Wartortle</h3>
+                <p>#008</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=9">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="Blastoise">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/9.gif" alt="Blastoise GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/9.gif" alt="Blastoise Shiny GIF">
+                    </div>
+                </a>
+                <h3>Blastoise</h3>
+                <p>#009</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug" data-types="bug">
+                <a href="pokemon-detail.html?id=10">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="Caterpie">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/10.gif" alt="Caterpie GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/10.gif" alt="Caterpie Shiny GIF">
+                    </div>
+                </a>
+                <h3>Caterpie</h3>
+                <p>#010</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug" data-types="bug">
+                <a href="pokemon-detail.html?id=11">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png" alt="Metapod">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/11.gif" alt="Metapod GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/11.gif" alt="Metapod Shiny GIF">
+                    </div>
+                </a>
+                <h3>Metapod</h3>
+                <p>#011</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-flying" data-types="bug,flying">
+                <a href="pokemon-detail.html?id=12">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="Butterfree">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/12.gif" alt="Butterfree GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/12.gif" alt="Butterfree Shiny GIF">
+                    </div>
+                </a>
+                <h3>Butterfree</h3>
+                <p>#012</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-poison" data-types="bug,poison">
+                <a href="pokemon-detail.html?id=13">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png" alt="Weedle">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/13.gif" alt="Weedle GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/13.gif" alt="Weedle Shiny GIF">
+                    </div>
+                </a>
+                <h3>Weedle</h3>
+                <p>#013</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-poison" data-types="bug,poison">
+                <a href="pokemon-detail.html?id=14">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png" alt="Kakuna">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/14.gif" alt="Kakuna GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/14.gif" alt="Kakuna Shiny GIF">
+                    </div>
+                </a>
+                <h3>Kakuna</h3>
+                <p>#014</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-poison" data-types="bug,poison">
+                <a href="pokemon-detail.html?id=15">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png" alt="Beedrill">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/15.gif" alt="Beedrill GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/15.gif" alt="Beedrill Shiny GIF">
+                    </div>
+                </a>
+                <h3>Beedrill</h3>
+                <p>#015</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=16">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="Pidgey">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/16.gif" alt="Pidgey GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/16.gif" alt="Pidgey Shiny GIF">
+                    </div>
+                </a>
+                <h3>Pidgey</h3>
+                <p>#016</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=17">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png" alt="Pidgeotto">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/17.gif" alt="Pidgeotto GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/17.gif" alt="Pidgeotto Shiny GIF">
+                    </div>
+                </a>
+                <h3>Pidgeotto</h3>
+                <p>#017</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=18">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png" alt="Pidgeot">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/18.gif" alt="Pidgeot GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/18.gif" alt="Pidgeot Shiny GIF">
+                    </div>
+                </a>
+                <h3>Pidgeot</h3>
+                <p>#018</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=19">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png" alt="Rattata">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/19.gif" alt="Rattata GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/19.gif" alt="Rattata Shiny GIF">
+                    </div>
+                </a>
+                <h3>Rattata</h3>
+                <p>#019</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=20">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png" alt="Raticate">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/20.gif" alt="Raticate GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/20.gif" alt="Raticate Shiny GIF">
+                    </div>
+                </a>
+                <h3>Raticate</h3>
+                <p>#020</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=21">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png" alt="Spearow">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/21.gif" alt="Spearow GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/21.gif" alt="Spearow Shiny GIF">
+                    </div>
+                </a>
+                <h3>Spearow</h3>
+                <p>#021</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=22">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png" alt="Fearow">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/22.gif" alt="Fearow GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/22.gif" alt="Fearow Shiny GIF">
+                    </div>
+                </a>
+                <h3>Fearow</h3>
+                <p>#022</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=23">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png" alt="Ekans">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/23.gif" alt="Ekans GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/23.gif" alt="Ekans Shiny GIF">
+                    </div>
+                </a>
+                <h3>Ekans</h3>
+                <p>#023</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=24">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png" alt="Arbok">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/24.gif" alt="Arbok GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/24.gif" alt="Arbok Shiny GIF">
+                    </div>
+                </a>
+                <h3>Arbok</h3>
+                <p>#024</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric" data-types="electric">
+                <a href="pokemon-detail.html?id=25">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="Pikachu GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/25.gif" alt="Pikachu Shiny GIF">
+                    </div>
+                </a>
+                <h3>Pikachu</h3>
+                <p>#025</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric" data-types="electric">
+                <a href="pokemon-detail.html?id=26">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="Raichu">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/26.gif" alt="Raichu GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/26.gif" alt="Raichu Shiny GIF">
+                    </div>
+                </a>
+                <h3>Raichu</h3>
+                <p>#026</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground" data-types="ground">
+                <a href="pokemon-detail.html?id=27">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png" alt="Sandshrew">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/27.gif" alt="Sandshrew GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/27.gif" alt="Sandshrew Shiny GIF">
+                    </div>
+                </a>
+                <h3>Sandshrew</h3>
+                <p>#027</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground" data-types="ground">
+                <a href="pokemon-detail.html?id=28">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png" alt="Sandslash">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/28.gif" alt="Sandslash GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/28.gif" alt="Sandslash Shiny GIF">
+                    </div>
+                </a>
+                <h3>Sandslash</h3>
+                <p>#028</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=29">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png" alt="Nidoran♀">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/29.gif" alt="Nidoran♀ GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/29.gif" alt="Nidoran♀ Shiny GIF">
+                    </div>
+                </a>
+                <h3>Nidoran♀</h3>
+                <p>#029</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=30">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png" alt="Nidorina">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/30.gif" alt="Nidorina GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/30.gif" alt="Nidorina Shiny GIF">
+                    </div>
+                </a>
+                <h3>Nidorina</h3>
+                <p>#030</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison type-ground" data-types="poison,ground">
+                <a href="pokemon-detail.html?id=31">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png" alt="Nidoqueen">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/31.gif" alt="Nidoqueen GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/31.gif" alt="Nidoqueen Shiny GIF">
+                    </div>
+                </a>
+                <h3>Nidoqueen</h3>
+                <p>#031</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=32">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png" alt="Nidoran♂">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/32.gif" alt="Nidoran♂ GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/32.gif" alt="Nidoran♂ Shiny GIF">
+                    </div>
+                </a>
+                <h3>Nidoran♂</h3>
+                <p>#032</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=33">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png" alt="Nidorino">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/33.gif" alt="Nidorino GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/33.gif" alt="Nidorino Shiny GIF">
+                    </div>
+                </a>
+                <h3>Nidorino</h3>
+                <p>#033</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison type-ground" data-types="poison,ground">
+                <a href="pokemon-detail.html?id=34">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png" alt="Nidoking">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/34.gif" alt="Nidoking GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/34.gif" alt="Nidoking Shiny GIF">
+                    </div>
+                </a>
+                <h3>Nidoking</h3>
+                <p>#034</p>
+            </div>
+
+                                    <div class="pokemon-card type-fairy" data-types="fairy">
+                <a href="pokemon-detail.html?id=35">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png" alt="Clefairy">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/35.gif" alt="Clefairy GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/35.gif" alt="Clefairy Shiny GIF">
+                    </div>
+                </a>
+                <h3>Clefairy</h3>
+                <p>#035</p>
+            </div>
+
+                                    <div class="pokemon-card type-fairy" data-types="fairy">
+                <a href="pokemon-detail.html?id=36">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png" alt="Clefable">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/36.gif" alt="Clefable GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/36.gif" alt="Clefable Shiny GIF">
+                    </div>
+                </a>
+                <h3>Clefable</h3>
+                <p>#036</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=37">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png" alt="Vulpix">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/37.gif" alt="Vulpix GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/37.gif" alt="Vulpix Shiny GIF">
+                    </div>
+                </a>
+                <h3>Vulpix</h3>
+                <p>#037</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=38">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" alt="Ninetales">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/38.gif" alt="Ninetales GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/38.gif" alt="Ninetales Shiny GIF">
+                    </div>
+                </a>
+                <h3>Ninetales</h3>
+                <p>#038</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-fairy" data-types="normal,fairy">
+                <a href="pokemon-detail.html?id=39">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="Jigglypuff">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif" alt="Jigglypuff GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/39.gif" alt="Jigglypuff Shiny GIF">
+                    </div>
+                </a>
+                <h3>Jigglypuff</h3>
+                <p>#039</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-fairy" data-types="normal,fairy">
+                <a href="pokemon-detail.html?id=40">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png" alt="Wigglytuff">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/40.gif" alt="Wigglytuff GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/40.gif" alt="Wigglytuff Shiny GIF">
+                    </div>
+                </a>
+                <h3>Wigglytuff</h3>
+                <p>#040</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison type-flying" data-types="poison,flying">
+                <a href="pokemon-detail.html?id=41">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png" alt="Zubat">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/41.gif" alt="Zubat GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/41.gif" alt="Zubat Shiny GIF">
+                    </div>
+                </a>
+                <h3>Zubat</h3>
+                <p>#041</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison type-flying" data-types="poison,flying">
+                <a href="pokemon-detail.html?id=42">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png" alt="Golbat">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/42.gif" alt="Golbat GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/42.gif" alt="Golbat Shiny GIF">
+                    </div>
+                </a>
+                <h3>Golbat</h3>
+                <p>#042</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=43">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png" alt="Oddish">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/43.gif" alt="Oddish GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/43.gif" alt="Oddish Shiny GIF">
+                    </div>
+                </a>
+                <h3>Oddish</h3>
+                <p>#043</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=44">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png" alt="Gloom">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/44.gif" alt="Gloom GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/44.gif" alt="Gloom Shiny GIF">
+                    </div>
+                </a>
+                <h3>Gloom</h3>
+                <p>#044</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=45">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png" alt="Vileplume">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/45.gif" alt="Vileplume GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/45.gif" alt="Vileplume Shiny GIF">
+                    </div>
+                </a>
+                <h3>Vileplume</h3>
+                <p>#045</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-grass" data-types="bug,grass">
+                <a href="pokemon-detail.html?id=46">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png" alt="Paras">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/46.gif" alt="Paras GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/46.gif" alt="Paras Shiny GIF">
+                    </div>
+                </a>
+                <h3>Paras</h3>
+                <p>#046</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-grass" data-types="bug,grass">
+                <a href="pokemon-detail.html?id=47">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png" alt="Parasect">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/47.gif" alt="Parasect GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/47.gif" alt="Parasect Shiny GIF">
+                    </div>
+                </a>
+                <h3>Parasect</h3>
+                <p>#047</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-poison" data-types="bug,poison">
+                <a href="pokemon-detail.html?id=48">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png" alt="Venonat">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/48.gif" alt="Venonat GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/48.gif" alt="Venonat Shiny GIF">
+                    </div>
+                </a>
+                <h3>Venonat</h3>
+                <p>#048</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-poison" data-types="bug,poison">
+                <a href="pokemon-detail.html?id=49">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png" alt="Venomoth">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/49.gif" alt="Venomoth GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/49.gif" alt="Venomoth Shiny GIF">
+                    </div>
+                </a>
+                <h3>Venomoth</h3>
+                <p>#049</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground" data-types="ground">
+                <a href="pokemon-detail.html?id=50">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png" alt="Diglett">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/50.gif" alt="Diglett GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/50.gif" alt="Diglett Shiny GIF">
+                    </div>
+                </a>
+                <h3>Diglett</h3>
+                <p>#050</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground" data-types="ground">
+                <a href="pokemon-detail.html?id=51">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/051.png" alt="Dugtrio">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/51.gif" alt="Dugtrio GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/51.gif" alt="Dugtrio Shiny GIF">
+                    </div>
+                </a>
+                <h3>Dugtrio</h3>
+                <p>#051</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=52">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png" alt="Meowth">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/52.gif" alt="Meowth GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/52.gif" alt="Meowth Shiny GIF">
+                    </div>
+                </a>
+                <h3>Meowth</h3>
+                <p>#052</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=53">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/053.png" alt="Persian">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/53.gif" alt="Persian GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/53.gif" alt="Persian Shiny GIF">
+                    </div>
+                </a>
+                <h3>Persian</h3>
+                <p>#053</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=54">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="Psyduck">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/54.gif" alt="Psyduck GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/54.gif" alt="Psyduck Shiny GIF">
+                    </div>
+                </a>
+                <h3>Psyduck</h3>
+                <p>#054</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=55">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/055.png" alt="Golduck">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/55.gif" alt="Golduck GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/55.gif" alt="Golduck Shiny GIF">
+                    </div>
+                </a>
+                <h3>Golduck</h3>
+                <p>#055</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=56">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png" alt="Mankey">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/56.gif" alt="Mankey GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/56.gif" alt="Mankey Shiny GIF">
+                    </div>
+                </a>
+                <h3>Mankey</h3>
+                <p>#056</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=57">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/057.png" alt="Primeape">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/57.gif" alt="Primeape GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/57.gif" alt="Primeape Shiny GIF">
+                    </div>
+                </a>
+                <h3>Primeape</h3>
+                <p>#057</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=58">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/058.png" alt="Growlithe">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/58.gif" alt="Growlithe GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/58.gif" alt="Growlithe Shiny GIF">
+                    </div>
+                </a>
+                <h3>Growlithe</h3>
+                <p>#058</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=59">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png" alt="Arcanine">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/59.gif" alt="Arcanine GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/59.gif" alt="Arcanine Shiny GIF">
+                    </div>
+                </a>
+                <h3>Arcanine</h3>
+                <p>#059</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=60">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png" alt="Poliwag">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/60.gif" alt="Poliwag GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/60.gif" alt="Poliwag Shiny GIF">
+                    </div>
+                </a>
+                <h3>Poliwag</h3>
+                <p>#060</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=61">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/061.png" alt="Poliwhirl">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/61.gif" alt="Poliwhirl GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/61.gif" alt="Poliwhirl Shiny GIF">
+                    </div>
+                </a>
+                <h3>Poliwhirl</h3>
+                <p>#061</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-fighting" data-types="water,fighting">
+                <a href="pokemon-detail.html?id=62">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/062.png" alt="Poliwrath">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/62.gif" alt="Poliwrath GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/62.gif" alt="Poliwrath Shiny GIF">
+                    </div>
+                </a>
+                <h3>Poliwrath</h3>
+                <p>#062</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=63">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png" alt="Abra">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/63.gif" alt="Abra GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/63.gif" alt="Abra Shiny GIF">
+                    </div>
+                </a>
+                <h3>Abra</h3>
+                <p>#063</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=64">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png" alt="Kadabra">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/64.gif" alt="Kadabra GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/64.gif" alt="Kadabra Shiny GIF">
+                    </div>
+                </a>
+                <h3>Kadabra</h3>
+                <p>#064</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=65">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png" alt="Alakazam">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/65.gif" alt="Alakazam GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/65.gif" alt="Alakazam Shiny GIF">
+                    </div>
+                </a>
+                <h3>Alakazam</h3>
+                <p>#065</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=66">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png" alt="Machop">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/66.gif" alt="Machop GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/66.gif" alt="Machop Shiny GIF">
+                    </div>
+                </a>
+                <h3>Machop</h3>
+                <p>#066</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=67">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png" alt="Machoke">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/67.gif" alt="Machoke GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/67.gif" alt="Machoke Shiny GIF">
+                    </div>
+                </a>
+                <h3>Machoke</h3>
+                <p>#067</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=68">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png" alt="Machamp">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/68.gif" alt="Machamp GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/68.gif" alt="Machamp Shiny GIF">
+                    </div>
+                </a>
+                <h3>Machamp</h3>
+                <p>#068</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=69">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png" alt="Bellsprout">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/69.gif" alt="Bellsprout GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/69.gif" alt="Bellsprout Shiny GIF">
+                    </div>
+                </a>
+                <h3>Bellsprout</h3>
+                <p>#069</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=70">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/070.png" alt="Weepinbell">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/70.gif" alt="Weepinbell GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/70.gif" alt="Weepinbell Shiny GIF">
+                    </div>
+                </a>
+                <h3>Weepinbell</h3>
+                <p>#070</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-poison" data-types="grass,poison">
+                <a href="pokemon-detail.html?id=71">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/071.png" alt="Victreebel">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/71.gif" alt="Victreebel GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/71.gif" alt="Victreebel Shiny GIF">
+                    </div>
+                </a>
+                <h3>Victreebel</h3>
+                <p>#071</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-poison" data-types="water,poison">
+                <a href="pokemon-detail.html?id=72">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png" alt="Tentacool">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/72.gif" alt="Tentacool GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/72.gif" alt="Tentacool Shiny GIF">
+                    </div>
+                </a>
+                <h3>Tentacool</h3>
+                <p>#072</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-poison" data-types="water,poison">
+                <a href="pokemon-detail.html?id=73">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/073.png" alt="Tentacruel">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/73.gif" alt="Tentacruel GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/73.gif" alt="Tentacruel Shiny GIF">
+                    </div>
+                </a>
+                <h3>Tentacruel</h3>
+                <p>#073</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-ground" data-types="rock,ground">
+                <a href="pokemon-detail.html?id=74">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png" alt="Geodude">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/74.gif" alt="Geodude GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/74.gif" alt="Geodude Shiny GIF">
+                    </div>
+                </a>
+                <h3>Geodude</h3>
+                <p>#074</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-ground" data-types="rock,ground">
+                <a href="pokemon-detail.html?id=75">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png" alt="Graveler">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/75.gif" alt="Graveler GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/75.gif" alt="Graveler Shiny GIF">
+                    </div>
+                </a>
+                <h3>Graveler</h3>
+                <p>#075</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-ground" data-types="rock,ground">
+                <a href="pokemon-detail.html?id=76">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png" alt="Golem">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/76.gif" alt="Golem GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/76.gif" alt="Golem Shiny GIF">
+                    </div>
+                </a>
+                <h3>Golem</h3>
+                <p>#076</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=77">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png" alt="Ponyta">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/77.gif" alt="Ponyta GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/77.gif" alt="Ponyta Shiny GIF">
+                    </div>
+                </a>
+                <h3>Ponyta</h3>
+                <p>#077</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=78">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png" alt="Rapidash">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/78.gif" alt="Rapidash GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/78.gif" alt="Rapidash Shiny GIF">
+                    </div>
+                </a>
+                <h3>Rapidash</h3>
+                <p>#078</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-psychic" data-types="water,psychic">
+                <a href="pokemon-detail.html?id=79">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/079.png" alt="Slowpoke">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/79.gif" alt="Slowpoke GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/79.gif" alt="Slowpoke Shiny GIF">
+                    </div>
+                </a>
+                <h3>Slowpoke</h3>
+                <p>#079</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-psychic" data-types="water,psychic">
+                <a href="pokemon-detail.html?id=80">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png" alt="Slowbro">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/80.gif" alt="Slowbro GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/80.gif" alt="Slowbro Shiny GIF">
+                    </div>
+                </a>
+                <h3>Slowbro</h3>
+                <p>#080</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric type-steel" data-types="electric,steel">
+                <a href="pokemon-detail.html?id=81">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/081.png" alt="Magnemite">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/81.gif" alt="Magnemite GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/81.gif" alt="Magnemite Shiny GIF">
+                    </div>
+                </a>
+                <h3>Magnemite</h3>
+                <p>#081</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric type-steel" data-types="electric,steel">
+                <a href="pokemon-detail.html?id=82">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png" alt="Magneton">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/82.gif" alt="Magneton GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/82.gif" alt="Magneton Shiny GIF">
+                    </div>
+                </a>
+                <h3>Magneton</h3>
+                <p>#082</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=83">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png" alt="Farfetch'd">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/83.gif" alt="Farfetch'd GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/83.gif" alt="Farfetch'd Shiny GIF">
+                    </div>
+                </a>
+                <h3>Farfetch'd</h3>
+                <p>#083</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=84">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png" alt="Doduo">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/84.gif" alt="Doduo GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/84.gif" alt="Doduo Shiny GIF">
+                    </div>
+                </a>
+                <h3>Doduo</h3>
+                <p>#084</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal type-flying" data-types="normal,flying">
+                <a href="pokemon-detail.html?id=85">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/085.png" alt="Dodrio">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/85.gif" alt="Dodrio GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/85.gif" alt="Dodrio Shiny GIF">
+                    </div>
+                </a>
+                <h3>Dodrio</h3>
+                <p>#085</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=86">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png" alt="Seel">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/86.gif" alt="Seel GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/86.gif" alt="Seel Shiny GIF">
+                    </div>
+                </a>
+                <h3>Seel</h3>
+                <p>#086</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-ice" data-types="water,ice">
+                <a href="pokemon-detail.html?id=87">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png" alt="Dewgong">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/87.gif" alt="Dewgong GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/87.gif" alt="Dewgong Shiny GIF">
+                    </div>
+                </a>
+                <h3>Dewgong</h3>
+                <p>#087</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=88">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png" alt="Grimer">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/88.gif" alt="Grimer GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/88.gif" alt="Grimer Shiny GIF">
+                    </div>
+                </a>
+                <h3>Grimer</h3>
+                <p>#088</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=89">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/089.png" alt="Muk">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/89.gif" alt="Muk GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/89.gif" alt="Muk Shiny GIF">
+                    </div>
+                </a>
+                <h3>Muk</h3>
+                <p>#089</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=90">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/090.png" alt="Shellder">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/90.gif" alt="Shellder GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/90.gif" alt="Shellder Shiny GIF">
+                    </div>
+                </a>
+                <h3>Shellder</h3>
+                <p>#090</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-ice" data-types="water,ice">
+                <a href="pokemon-detail.html?id=91">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png" alt="Cloyster">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/91.gif" alt="Cloyster GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/91.gif" alt="Cloyster Shiny GIF">
+                    </div>
+                </a>
+                <h3>Cloyster</h3>
+                <p>#091</p>
+            </div>
+
+                                    <div class="pokemon-card type-ghost type-poison" data-types="ghost,poison">
+                <a href="pokemon-detail.html?id=92">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png" alt="Gastly">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/92.gif" alt="Gastly GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/92.gif" alt="Gastly Shiny GIF">
+                    </div>
+                </a>
+                <h3>Gastly</h3>
+                <p>#092</p>
+            </div>
+
+                                    <div class="pokemon-card type-ghost type-poison" data-types="ghost,poison">
+                <a href="pokemon-detail.html?id=93">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png" alt="Haunter">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/93.gif" alt="Haunter GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/93.gif" alt="Haunter Shiny GIF">
+                    </div>
+                </a>
+                <h3>Haunter</h3>
+                <p>#093</p>
+            </div>
+
+                                    <div class="pokemon-card type-ghost type-poison" data-types="ghost,poison">
+                <a href="pokemon-detail.html?id=94">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="Gengar">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/94.gif" alt="Gengar GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/94.gif" alt="Gengar Shiny GIF">
+                    </div>
+                </a>
+                <h3>Gengar</h3>
+                <p>#094</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-ground" data-types="rock,ground">
+                <a href="pokemon-detail.html?id=95">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png" alt="Onix">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/95.gif" alt="Onix GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/95.gif" alt="Onix Shiny GIF">
+                    </div>
+                </a>
+                <h3>Onix</h3>
+                <p>#095</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=96">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/096.png" alt="Drowzee">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/96.gif" alt="Drowzee GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/96.gif" alt="Drowzee Shiny GIF">
+                    </div>
+                </a>
+                <h3>Drowzee</h3>
+                <p>#096</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=97">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png" alt="Hypno">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/97.gif" alt="Hypno GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/97.gif" alt="Hypno Shiny GIF">
+                    </div>
+                </a>
+                <h3>Hypno</h3>
+                <p>#097</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=98">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png" alt="Krabby">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/98.gif" alt="Krabby GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/98.gif" alt="Krabby Shiny GIF">
+                    </div>
+                </a>
+                <h3>Krabby</h3>
+                <p>#098</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=99">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png" alt="Kingler">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/99.gif" alt="Kingler GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/99.gif" alt="Kingler Shiny GIF">
+                    </div>
+                </a>
+                <h3>Kingler</h3>
+                <p>#099</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric" data-types="electric">
+                <a href="pokemon-detail.html?id=100">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png" alt="Voltorb">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/100.gif" alt="Voltorb GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/100.gif" alt="Voltorb Shiny GIF">
+                    </div>
+                </a>
+                <h3>Voltorb</h3>
+                <p>#100</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric" data-types="electric">
+                <a href="pokemon-detail.html?id=101">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/101.png" alt="Electrode">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/101.gif" alt="Electrode GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/101.gif" alt="Electrode Shiny GIF">
+                    </div>
+                </a>
+                <h3>Electrode</h3>
+                <p>#101</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-psychic" data-types="grass,psychic">
+                <a href="pokemon-detail.html?id=102">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/102.png" alt="Exeggcute">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/102.gif" alt="Exeggcute GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/102.gif" alt="Exeggcute Shiny GIF">
+                    </div>
+                </a>
+                <h3>Exeggcute</h3>
+                <p>#102</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass type-psychic" data-types="grass,psychic">
+                <a href="pokemon-detail.html?id=103">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/103.png" alt="Exeggutor">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/103.gif" alt="Exeggutor GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/103.gif" alt="Exeggutor Shiny GIF">
+                    </div>
+                </a>
+                <h3>Exeggutor</h3>
+                <p>#103</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground" data-types="ground">
+                <a href="pokemon-detail.html?id=104">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png" alt="Cubone">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/104.gif" alt="Cubone GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/104.gif" alt="Cubone Shiny GIF">
+                    </div>
+                </a>
+                <h3>Cubone</h3>
+                <p>#104</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground" data-types="ground">
+                <a href="pokemon-detail.html?id=105">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/105.png" alt="Marowak">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/105.gif" alt="Marowak GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/105.gif" alt="Marowak Shiny GIF">
+                    </div>
+                </a>
+                <h3>Marowak</h3>
+                <p>#105</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=106">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/106.png" alt="Hitmonlee">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/106.gif" alt="Hitmonlee GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/106.gif" alt="Hitmonlee Shiny GIF">
+                    </div>
+                </a>
+                <h3>Hitmonlee</h3>
+                <p>#106</p>
+            </div>
+
+                                    <div class="pokemon-card type-fighting" data-types="fighting">
+                <a href="pokemon-detail.html?id=107">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/107.png" alt="Hitmonchan">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/107.gif" alt="Hitmonchan GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/107.gif" alt="Hitmonchan Shiny GIF">
+                    </div>
+                </a>
+                <h3>Hitmonchan</h3>
+                <p>#107</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=108">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png" alt="Lickitung">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/108.gif" alt="Lickitung GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/108.gif" alt="Lickitung Shiny GIF">
+                    </div>
+                </a>
+                <h3>Lickitung</h3>
+                <p>#108</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=109">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/109.png" alt="Koffing">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/109.gif" alt="Koffing GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/109.gif" alt="Koffing Shiny GIF">
+                    </div>
+                </a>
+                <h3>Koffing</h3>
+                <p>#109</p>
+            </div>
+
+                                    <div class="pokemon-card type-poison" data-types="poison">
+                <a href="pokemon-detail.html?id=110">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/110.png" alt="Weezing">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/110.gif" alt="Weezing GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/110.gif" alt="Weezing Shiny GIF">
+                    </div>
+                </a>
+                <h3>Weezing</h3>
+                <p>#110</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground type-rock" data-types="ground,rock">
+                <a href="pokemon-detail.html?id=111">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/111.png" alt="Rhyhorn">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/111.gif" alt="Rhyhorn GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/111.gif" alt="Rhyhorn Shiny GIF">
+                    </div>
+                </a>
+                <h3>Rhyhorn</h3>
+                <p>#111</p>
+            </div>
+
+                                    <div class="pokemon-card type-ground type-rock" data-types="ground,rock">
+                <a href="pokemon-detail.html?id=112">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/112.png" alt="Rhydon">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/112.gif" alt="Rhydon GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/112.gif" alt="Rhydon Shiny GIF">
+                    </div>
+                </a>
+                <h3>Rhydon</h3>
+                <p>#112</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=113">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png" alt="Chansey">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/113.gif" alt="Chansey GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/113.gif" alt="Chansey Shiny GIF">
+                    </div>
+                </a>
+                <h3>Chansey</h3>
+                <p>#113</p>
+            </div>
+
+                                    <div class="pokemon-card type-grass" data-types="grass">
+                <a href="pokemon-detail.html?id=114">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png" alt="Tangela">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/114.gif" alt="Tangela GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/114.gif" alt="Tangela Shiny GIF">
+                    </div>
+                </a>
+                <h3>Tangela</h3>
+                <p>#114</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=115">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/115.png" alt="Kangaskhan">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/115.gif" alt="Kangaskhan GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/115.gif" alt="Kangaskhan Shiny GIF">
+                    </div>
+                </a>
+                <h3>Kangaskhan</h3>
+                <p>#115</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=116">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png" alt="Horsea">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/116.gif" alt="Horsea GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/116.gif" alt="Horsea Shiny GIF">
+                    </div>
+                </a>
+                <h3>Horsea</h3>
+                <p>#116</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=117">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/117.png" alt="Seadra">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/117.gif" alt="Seadra GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/117.gif" alt="Seadra Shiny GIF">
+                    </div>
+                </a>
+                <h3>Seadra</h3>
+                <p>#117</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=118">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png" alt="Goldeen">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/118.gif" alt="Goldeen GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/118.gif" alt="Goldeen Shiny GIF">
+                    </div>
+                </a>
+                <h3>Goldeen</h3>
+                <p>#118</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=119">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/119.png" alt="Seaking">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/119.gif" alt="Seaking GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/119.gif" alt="Seaking Shiny GIF">
+                    </div>
+                </a>
+                <h3>Seaking</h3>
+                <p>#119</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=120">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png" alt="Staryu">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/120.gif" alt="Staryu GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/120.gif" alt="Staryu Shiny GIF">
+                    </div>
+                </a>
+                <h3>Staryu</h3>
+                <p>#120</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-psychic" data-types="water,psychic">
+                <a href="pokemon-detail.html?id=121">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png" alt="Starmie">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/121.gif" alt="Starmie GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/121.gif" alt="Starmie Shiny GIF">
+                    </div>
+                </a>
+                <h3>Starmie</h3>
+                <p>#121</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic type-fairy" data-types="psychic,fairy">
+                <a href="pokemon-detail.html?id=122">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/122.png" alt="Mr. Mime">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/122.gif" alt="Mr. Mime GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/122.gif" alt="Mr. Mime Shiny GIF">
+                    </div>
+                </a>
+                <h3>Mr. Mime</h3>
+                <p>#122</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug type-flying" data-types="bug,flying">
+                <a href="pokemon-detail.html?id=123">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/123.png" alt="Scyther">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/123.gif" alt="Scyther GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/123.gif" alt="Scyther Shiny GIF">
+                    </div>
+                </a>
+                <h3>Scyther</h3>
+                <p>#123</p>
+            </div>
+
+                                    <div class="pokemon-card type-ice type-psychic" data-types="ice,psychic">
+                <a href="pokemon-detail.html?id=124">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/124.png" alt="Jynx">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/124.gif" alt="Jynx GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/124.gif" alt="Jynx Shiny GIF">
+                    </div>
+                </a>
+                <h3>Jynx</h3>
+                <p>#124</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric" data-types="electric">
+                <a href="pokemon-detail.html?id=125">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/125.png" alt="Electabuzz">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/125.gif" alt="Electabuzz GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/125.gif" alt="Electabuzz Shiny GIF">
+                    </div>
+                </a>
+                <h3>Electabuzz</h3>
+                <p>#125</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=126">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/126.png" alt="Magmar">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/126.gif" alt="Magmar GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/126.gif" alt="Magmar Shiny GIF">
+                    </div>
+                </a>
+                <h3>Magmar</h3>
+                <p>#126</p>
+            </div>
+
+                                    <div class="pokemon-card type-bug" data-types="bug">
+                <a href="pokemon-detail.html?id=127">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/127.png" alt="Pinsir">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/127.gif" alt="Pinsir GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/127.gif" alt="Pinsir Shiny GIF">
+                    </div>
+                </a>
+                <h3>Pinsir</h3>
+                <p>#127</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=128">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/128.png" alt="Tauros">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/128.gif" alt="Tauros GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/128.gif" alt="Tauros Shiny GIF">
+                    </div>
+                </a>
+                <h3>Tauros</h3>
+                <p>#128</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=129">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png" alt="Magikarp">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/129.gif" alt="Magikarp GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/129.gif" alt="Magikarp Shiny GIF">
+                    </div>
+                </a>
+                <h3>Magikarp</h3>
+                <p>#129</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-flying" data-types="water,flying">
+                <a href="pokemon-detail.html?id=130">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png" alt="Gyarados">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/130.gif" alt="Gyarados GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/130.gif" alt="Gyarados Shiny GIF">
+                    </div>
+                </a>
+                <h3>Gyarados</h3>
+                <p>#130</p>
+            </div>
+
+                                    <div class="pokemon-card type-water type-ice" data-types="water,ice">
+                <a href="pokemon-detail.html?id=131">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png" alt="Lapras">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/131.gif" alt="Lapras GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/131.gif" alt="Lapras Shiny GIF">
+                    </div>
+                </a>
+                <h3>Lapras</h3>
+                <p>#131</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=132">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png" alt="Ditto">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/132.gif" alt="Ditto GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/132.gif" alt="Ditto Shiny GIF">
+                    </div>
+                </a>
+                <h3>Ditto</h3>
+                <p>#132</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=133">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="Eevee">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif" alt="Eevee GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/133.gif" alt="Eevee Shiny GIF">
+                    </div>
+                </a>
+                <h3>Eevee</h3>
+                <p>#133</p>
+            </div>
+
+                                    <div class="pokemon-card type-water" data-types="water">
+                <a href="pokemon-detail.html?id=134">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png" alt="Vaporeon">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/134.gif" alt="Vaporeon GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/134.gif" alt="Vaporeon Shiny GIF">
+                    </div>
+                </a>
+                <h3>Vaporeon</h3>
+                <p>#134</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric" data-types="electric">
+                <a href="pokemon-detail.html?id=135">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png" alt="Jolteon">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/135.gif" alt="Jolteon GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/135.gif" alt="Jolteon Shiny GIF">
+                    </div>
+                </a>
+                <h3>Jolteon</h3>
+                <p>#135</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire" data-types="fire">
+                <a href="pokemon-detail.html?id=136">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png" alt="Flareon">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/136.gif" alt="Flareon GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/136.gif" alt="Flareon Shiny GIF">
+                    </div>
+                </a>
+                <h3>Flareon</h3>
+                <p>#136</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=137">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png" alt="Porygon">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/137.gif" alt="Porygon GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/137.gif" alt="Porygon Shiny GIF">
+                    </div>
+                </a>
+                <h3>Porygon</h3>
+                <p>#137</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-water" data-types="rock,water">
+                <a href="pokemon-detail.html?id=138">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/138.png" alt="Omanyte">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/138.gif" alt="Omanyte GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/138.gif" alt="Omanyte Shiny GIF">
+                    </div>
+                </a>
+                <h3>Omanyte</h3>
+                <p>#138</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-water" data-types="rock,water">
+                <a href="pokemon-detail.html?id=139">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/139.png" alt="Omastar">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/139.gif" alt="Omastar GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/139.gif" alt="Omastar Shiny GIF">
+                    </div>
+                </a>
+                <h3>Omastar</h3>
+                <p>#139</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-water" data-types="rock,water">
+                <a href="pokemon-detail.html?id=140">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/140.png" alt="Kabuto">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/140.gif" alt="Kabuto GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/140.gif" alt="Kabuto Shiny GIF">
+                    </div>
+                </a>
+                <h3>Kabuto</h3>
+                <p>#140</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-water" data-types="rock,water">
+                <a href="pokemon-detail.html?id=141">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/141.png" alt="Kabutops">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/141.gif" alt="Kabutops GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/141.gif" alt="Kabutops Shiny GIF">
+                    </div>
+                </a>
+                <h3>Kabutops</h3>
+                <p>#141</p>
+            </div>
+
+                                    <div class="pokemon-card type-rock type-flying" data-types="rock,flying">
+                <a href="pokemon-detail.html?id=142">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/142.png" alt="Aerodactyl">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/142.gif" alt="Aerodactyl GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/142.gif" alt="Aerodactyl Shiny GIF">
+                    </div>
+                </a>
+                <h3>Aerodactyl</h3>
+                <p>#142</p>
+            </div>
+
+                                    <div class="pokemon-card type-normal" data-types="normal">
+                <a href="pokemon-detail.html?id=143">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png" alt="Snorlax">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/143.gif" alt="Snorlax GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/143.gif" alt="Snorlax Shiny GIF">
+                    </div>
+                </a>
+                <h3>Snorlax</h3>
+                <p>#143</p>
+            </div>
+
+                                    <div class="pokemon-card type-ice type-flying" data-types="ice,flying">
+                <a href="pokemon-detail.html?id=144">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png" alt="Articuno">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/144.gif" alt="Articuno GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/144.gif" alt="Articuno Shiny GIF">
+                    </div>
+                </a>
+                <h3>Articuno</h3>
+                <p>#144</p>
+            </div>
+
+                                    <div class="pokemon-card type-electric type-flying" data-types="electric,flying">
+                <a href="pokemon-detail.html?id=145">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png" alt="Zapdos">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/145.gif" alt="Zapdos GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/145.gif" alt="Zapdos Shiny GIF">
+                    </div>
+                </a>
+                <h3>Zapdos</h3>
+                <p>#145</p>
+            </div>
+
+                                    <div class="pokemon-card type-fire type-flying" data-types="fire,flying">
+                <a href="pokemon-detail.html?id=146">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png" alt="Moltres">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/146.gif" alt="Moltres GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/146.gif" alt="Moltres Shiny GIF">
+                    </div>
+                </a>
+                <h3>Moltres</h3>
+                <p>#146</p>
+            </div>
+
+                                    <div class="pokemon-card type-dragon" data-types="dragon">
+                <a href="pokemon-detail.html?id=147">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/147.png" alt="Dratini">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/147.gif" alt="Dratini GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/147.gif" alt="Dratini Shiny GIF">
+                    </div>
+                </a>
+                <h3>Dratini</h3>
+                <p>#147</p>
+            </div>
+
+                                    <div class="pokemon-card type-dragon" data-types="dragon">
+                <a href="pokemon-detail.html?id=148">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/148.png" alt="Dragonair">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/148.gif" alt="Dragonair GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/148.gif" alt="Dragonair Shiny GIF">
+                    </div>
+                </a>
+                <h3>Dragonair</h3>
+                <p>#148</p>
+            </div>
+
+                                    <div class="pokemon-card type-dragon type-flying" data-types="dragon,flying">
+                <a href="pokemon-detail.html?id=149">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png" alt="Dragonite">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif" alt="Dragonite GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/149.gif" alt="Dragonite Shiny GIF">
+                    </div>
+                </a>
+                <h3>Dragonite</h3>
+                <p>#149</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=150">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="Mewtwo">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/150.gif" alt="Mewtwo GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/150.gif" alt="Mewtwo Shiny GIF">
+                    </div>
+                </a>
+                <h3>Mewtwo</h3>
+                <p>#150</p>
+            </div>
+
+                                    <div class="pokemon-card type-psychic" data-types="psychic">
+                <a href="pokemon-detail.html?id=151">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png" alt="Mew">
+                    <div class="gif-container">
+                        <img class="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/151.gif" alt="Mew GIF">
+                        <img class="pokemon-gif-shiny" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/151.gif" alt="Mew Shiny GIF">
+                    </div>
+                </a>
+                <h3>Mew</h3>
+                <p>#151</p>
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pokédex Gengar</p>
+    </footer>
+
+    <script>
+        function filterType(type) {
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.filters button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            const cards = document.querySelectorAll('.pokemon-card');
+            cards.forEach(card => {
+                if(type === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    // Verificar se o Pokémon tem o tipo selecionado (suporte a múltiplos tipos)
+                    const pokemonTypes = card.getAttribute('data-types');
+                    if (pokemonTypes && pokemonTypes.split(',').includes(type)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        function searchPokemon(searchTerm) {
+            const cards = document.querySelectorAll('.pokemon-card');
+            const term = searchTerm.toLowerCase().trim();
+            
+            cards.forEach(card => {
+                const pokemonName = card.querySelector('h3').textContent.toLowerCase();
+                const pokemonNumber = card.querySelector('p').textContent.toLowerCase();
+                
+                if (pokemonName.includes(term) || pokemonNumber.includes(term)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            
+            // Reset filter buttons when searching
+            if (term !== '') {
+                const buttons = document.querySelectorAll('.filters button');
+                buttons.forEach(btn => btn.classList.remove('active'));
+            }
+        }
+
+        // Add loading animation to images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.pokemon-card img:first-of-type');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                });
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+                
+                // Forçar carregamento da imagem
+                if (img.complete) {
+                    img.style.opacity = '1';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

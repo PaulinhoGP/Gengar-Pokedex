@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pokédex Gengar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="Gengar" class="header-img">
+            <div class="title-slogan">
+                <h1>Pokédex Gengar</h1>
+                <p class="slogan">Faça login para acessar a Pokédex!</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <h2>Login</h2>
+            <form action="home.html" method="get" class="login-form">
+                <label for="username">Nome de usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pokédex Gengar</p>
+    </footer>
+</body>
+</html>

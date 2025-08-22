@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon - Pokédex Gengar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pokemon-detail {
+            max-width: 800px;
+            margin: 40px auto;
+            background: linear-gradient(145deg, rgba(60,0,80,0.95), rgba(100,0,150,0.95));
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            border: 2px solid rgba(156,39,176,0.3);
+            backdrop-filter: blur(15px);
+        }
+
+        .pokemon-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pokemon-header h1 {
+            font-size: 3rem;
+            color: #E1BEE7;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 10px;
+        }
+
+        .pokemon-id {
+            font-size: 1.5rem;
+            color: #CE93D8;
+            font-weight: 600;
+        }
+
+        .pokemon-types {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .type-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .pokemon-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .image-section {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .image-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(156,39,176,0.5);
+        }
+
+        .image-section h3 {
+            color: #E1BEE7;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .image-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(156,39,176,0.7);
+        }
+
+        .pokemon-description {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .pokemon-description h3 {
+            color: #E1BEE7;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .pokemon-description p {
+            color: #CE93D8;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #7B1FA2, #9C27B0);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(135deg, #9C27B0, #E91E63);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(156,39,176,0.6);
+        }
+
+        .versions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .version-card {
+            background: rgba(0,0,0,0.2);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .version-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(156,39,176,0.4);
+        }
+
+        .version-card h4 {
+            color: #E1BEE7;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .version-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        @media screen and (max-width: 768px) {
+            .pokemon-detail {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .pokemon-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .pokemon-images {
+                grid-template-columns: 1fr;
+            }
+
+            .versions-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="Gengar" class="header-img">
+            <div class="title-slogan">
+                <h1>Pokédex Gengar</h1>
+                <p class="slogan">Explore os 151 Pokémon originais!</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="home.html" class="back-button">← Voltar à Pokédex</a>
+        
+        <div class="pokemon-detail">
+            <div class="pokemon-header">
+                <h1 id="pokemon-name">Carregando...</h1>
+                <div class="pokemon-id" id="pokemon-id">#000</div>
+                <div class="pokemon-types" id="pokemon-types"></div>
+            </div>
+
+            <div class="pokemon-description">
+                <h3>Descrição</h3>
+                <p id="pokemon-description">Carregando informações...</p>
+            </div>
+
+            <div class="pokemon-images">
+                <div class="image-section">
+                    <h3>Versão Oficial</h3>
+                    <img id="official-img" src="" alt="Imagem Oficial">
+                </div>
+                <div class="image-section">
+                    <h3>Sprite Normal</h3>
+                    <img id="sprite-img" src="" alt="Sprite Normal">
+                </div>
+                <div class="image-section">
+                    <h3>Sprite Shiny</h3>
+                    <img id="shiny-sprite-img" src="" alt="Sprite Shiny">
+                </div>
+            </div>
+
+            <div class="pokemon-description">
+                <h3>Versões Animadas</h3>
+                <div class="versions-grid">
+                    <div class="version-card">
+                        <h4>Normal</h4>
+                        <img id="normal-gif" src="" alt="GIF Normal">
+                    </div>
+                    <div class="version-card">
+                        <h4>Shiny</h4>
+                        <img id="shiny-gif" src="" alt="GIF Shiny">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pokédex Gengar</p>
+    </footer>
+
+    <script src="js/pokemon-data.js"></script>
+    <script>
+        // Função para obter parâmetro da URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Carregar dados do Pokémon
+        function loadPokemonData() {
+            const pokemonId = parseInt(getUrlParameter('id')) || 1;
+            const pokemon = getPokemonById(pokemonId);
+            const imageUrls = getPokemonImageUrls(pokemonId);
+
+            // Atualizar informações básicas
+            document.getElementById('pokemon-name').textContent = pokemon.name;
+            document.getElementById('pokemon-id').textContent = `#${pokemonId.toString().padStart(3, '0')}`;
+            document.getElementById('pokemon-description').textContent = pokemon.description;
+            document.title = `${pokemon.name} - Pokédex Gengar`;
+
+            // Atualizar tipos
+            const typesContainer = document.getElementById('pokemon-types');
+            typesContainer.innerHTML = '';
+            pokemon.type.forEach(type => {
+                const badge = document.createElement('span');
+                badge.className = 'type-badge';
+                badge.textContent = type;
+                badge.style.backgroundColor = typeColors[type] || '#68A090';
+                typesContainer.appendChild(badge);
+            });
+
+            // Atualizar imagens
+            document.getElementById('official-img').src = imageUrls.official;
+            document.getElementById('sprite-img').src = imageUrls.sprite;
+            document.getElementById('shiny-sprite-img').src = imageUrls.shinySprite;
+            document.getElementById('normal-gif').src = imageUrls.normalGif;
+            document.getElementById('shiny-gif').src = imageUrls.shinyGif;
+
+            // Adicionar tratamento de erro para imagens
+            const images = document.querySelectorAll('img[id$="-img"], img[id$="-gif"]');
+            images.forEach(img => {
+                img.onerror = function() {
+                    this.style.opacity = '0.3';
+                    this.alt = 'Imagem não disponível';
+                };
+            });
+        }
+
+        // Carregar dados quando a página carregar
+        document.addEventListener('DOMContentLoaded', loadPokemonData);
+    </script>
+</body>
+</html>
+
